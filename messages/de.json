@@ -1,0 +1,476 @@
+{
+  "Navigation": {
+    "about": "Über uns",
+    "services": "Leistungen",
+    "news": "Nachrichten",
+    "events": "Veranstaltungen",
+    "members": "Mitglieder",
+    "contact": "Kontakt"
+  },
+  "Impressum": {
+    "title": "Impressum",
+    "companyInfo": "Angaben gemäß § 5 TMG",
+    "association": "eingetragener Verein",
+    "address": "Anschrift",
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "representative": "Vertreten durch",
+    "board": "Vorstand",
+    "boardMembers": "Vorstand gemäß § 26 BGB",
+    "registerNotice": "Der Verein ist im Vereinsregister eingetragen.",
+    "registerInfo": "Registerangaben",
+    "registerCourt": "Registergericht",
+    "registerNumber": "Vereinsregister-Nr.",
+    "vatId": "Umsatzsteuer-Identifikationsnummer",
+    "responsibility": "Haftungsausschluss",
+    "contentDisclaimer": "Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.",
+    "linksDisclaimer": "Für die Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.",
+    "lastUpdate": "Stand",
+    "copyright": "Urheberrecht",
+    "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.",
+    "contactCTA": "Haben Sie Fragen? Kontaktieren Sie uns gerne!"
+  },
+  "Datenschutz": {
+    "title": "Datenschutzerklärung",
+    "introTitle": "Datenschutz auf einen Blick",
+    "introText": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).",
+    "dataCollection": "Datenerfassung auf dieser Website",
+    "automatically": "Wir erheben automatisch folgende Daten:",
+    "dataIP": "IP-Adresse des Besuchers",
+    "dataUsage": "Nutzungsdaten (besuchte Seiten, Verweildauer)",
+    "dataCookies": "Cookies und ähnliche Technologien",
+    "dataAccessTime": "Datum und Uhrzeit des Zugriffs",
+    "personalData": "Verarbeitung personenbezogener Daten",
+    "personalDataText": "Wir verarbeiten Ihre personenbezogenen Daten nur, wenn Sie uns diese freiwillig zur Verfügung stellen (z.B. bei einer Kontaktanfrage).",
+    "purpose": "Zweck der Datenverarbeitung",
+    "purpose1": "Zurverfügungstellung und Optimierung unseres Online-Angebots",
+    "purpose2": "Beantwortung von Kontaktanfragen",
+    "purpose3": "Mitgliederverwaltung",
+    "purpose4": "Newsletter-Versand (mit Ihrer Einwilligung)",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "Diese Website verwendet Cookies, um die Nutzererfahrung zu verbessern. Sie können die Speicherung von Cookies in Ihren Browsereinstellungen deaktivieren.",
+    "analytics": "Analyse-Tools",
+    "analyticsText": "Diese Website nutzt keine Analyse-Tools ohne Ihre ausdrückliche Einwilligung.",
+    "userRights": "Ihre Rechte",
+    "right1": "Auskunft über Ihre gespeicherten Daten",
+    "right2": "Berichtigung unrichtiger Daten",
+    "right3": "Löschung Ihrer Daten",
+    "right4": "Einschränkung der Verarbeitung",
+    "right5": "Widerspruch gegen die Verarbeitung",
+    "contactDPO": "Kontakt zum Datenschutz",
+    "dpo": "Datenschutzbeauftragter",
+    "email": "E-Mail",
+    "changes": "Änderungen dieser Datenschutzerklärung",
+    "changesText": "Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie aktuellen rechtlichen Anforderungen zu entsprechen.",
+    "lastUpdate": "Stand",
+    "contactCTA": "Haben Sie Fragen zum Datenschutz?"
+  },
+  "Home": {
+    "hero": {
+      "title": "Deutsch-Chinesische Industriekoorperationsverband",
+      "subtitle": "Inspiriert von Deutschland, verbindet China und Europa",
+      "description": "Schafft industriellen Wert durch starke Partnerschaften",
+      "ctaServices": "Unsere Leistungen",
+      "ctaContact": "Kontaktieren Sie uns"
+    },
+    "about": {
+      "title": "Grußwort des Präsidenten",
+      "subtitle": "Herzlich willkommen bei der DCI",
+      "description": "Mit 25 Jahren Erfahrung in China und tiefem Verständnis für beide Märkte widmet sich DCI dem Aufbau pragmatischer, transparenter und effizienter Kooperationsbrücken für Unternehmen."
+    },
+    "mission": {
+      "title": "Mission & Vision",
+      "subtitle": "Unsere Aufgabe und Zukunftsvision",
+      "bridge": "Brückenkopf zwischen China und Deutschland",
+      "trust": "Aufbau bilateralen Vertrauens",
+      "technology": "Förderung des Technologieaustauschs"
+    },
+    "stats": {
+      "clusters": "Industriecluster",
+      "experts": "Deutsche Experten",
+      "projects": "Erfolgreiche Projekte",
+      "members": "Mitgliedsunternehmen"
+    },
+    "news": {
+      "title": "Aktuelle Meldungen",
+      "subtitle": "Neuigkeiten aus der DCI-Gemeinschaft",
+      "viewAll": "Alle Nachrichten",
+      "noNews": "Derzeit keine Nachrichten"
+    },
+    "events": {
+      "title": "Kommende Veranstaltungen",
+      "subtitle": "Entdecken Sie unsere bevorstehenden Events",
+      "viewAll": "Alle Veranstaltungen",
+      "noEvents": "Derzeit keine Veranstaltungen"
+    }
+  },
+  "News": {
+    "title": "Nachrichten",
+    "subtitle": "Aktuelle Meldungen aus der DCI-Gemeinschaft",
+    "readMore": "Weiterlesen",
+    "noNews": "Derzeit keine Nachrichten",
+    "addNews": "News werden bald hinzugefügt."
+  },
+  "Events": {
+    "title": "Veranstaltungen",
+    "learnMore": "Mehr erfahren",
+    "noEvents": "Derzeit keine Veranstaltungen",
+    "addEvents": "Veranstaltungen werden bald hinzugefügt.",
+    "date": "Datum",
+    "time": "Zeit",
+    "location": "Ort"
+  },
+  "Members": {
+    "title": "Mitgliedsunternehmen",
+    "benefits": "Mitgliedsvorteile",
+    "subtitle": "Gemeinsam stärker",
+    "viewAll": "Unsere Mitglieder",
+    "join": "Mitglied werden",
+    "noMembers": "Derzeit keine Mitglieder",
+    "addMembers": "Mitglieder werden bald hinzugefügt.",
+    "benefitsList": {
+      "network": "Netzwerk",
+      "networkDesc": "Zugang zu unserem umfangreichen Netzwerk",
+      "events": "Veranstaltungen",
+      "eventsDesc": "Exklusive Events und Konferenzen",
+      "market": "Marktinformationen",
+      "marketDesc": "Aktuelle Markteinblicke und Analysen",
+      "business": "Geschäftschancen",
+      "businessDesc": "Geschäftspartner und Kooperationsmöglichkeiten"
+    }
+  },
+  "Common": {
+    "loading": "Wird geladen...",
+    "error": "Fehler",
+    "back": "Zurück",
+    "readMore": "Weiterlesen"
+  },
+  "Footer": {
+    "about": "Über DCI",
+    "links": "Schnelllinks",
+    "deOffice": "Deutschland Büro",
+    "cnOffice": "China Büro",
+    "partners": "Partner",
+    "copyright": "© 2026 DCI. Alle Rechte vorbehalten."
+  },
+  "About": {
+    "title": "Über uns",
+    "introTitle": "Deutsch-Chinesische Industriekoorperationsverband (DCI)",
+    "introText": "Die Deutsch-Chinesische Industriekoorperationsverband (DCI) ist eine gemeinnützige Organisation, die sich der Förderung der industriellen Zusammenarbeit und des technologischen Austauschs zwischen China und Deutschland widmet. Mit 25 Jahren Erfahrung in China und tiefem Verständnis für beide Märkte widmet sich DCI dem Aufbau pragmatischer, transparenter und effizienter Kooperationsbrücken für Unternehmen.",
+    "introTextDe": "Die Deutsch-Chinesische Industriekoorperationsverband (DCI) ist eine gemeinnützige Organisation, die sich der Förderung der industriellen Zusammenarbeit und des technologischen Austauschs zwischen China und Deutschland widmet.",
+    "coreValue": "Unser Kernwert liegt in professionellem Branchenwissen, umfangreichen Netzwerkressourcen und einer pragmatischen Kooperationshaltung, die chinesischen und deutschen Unternehmen hilft, kulturelle und marktbezogene Barrieren zu überwinden und gegenseitigen Nutzen zu erzielen.",
+    "presidentTitle": "Grußwort des Präsidenten",
+    "presidentQuote": "Mit 25 Jahren Erfahrung in China und tiefem Verständnis für beide Märkte widmet sich DCI dem Aufbau pragmatischer, transparenter und effizienter Kooperationsbrücken für Unternehmen in der komplexen globalen Wirtschaftslandschaft.",
+    "presidentQuoteDe": "Mit 25 Jahren Erfahrung in China und tiefem Verständnis für beide Märkte widmet sich DCI dem Aufbau pragmatischer, transparenter und effizienter Kooperationsbrücken.",
+    "presidentClosing": "Wir glauben, dass aufrichtige Zusammenarbeit und professioneller Service die Grundlage für langfristige Vertrauensbeziehungen sind. Wir freuen uns auf die Zusammenarbeit mit Ihnen, um eine erfolgreiche Zukunft der chinesisch-deutschen Industriekooperation zu gestalten.",
+    "missionTitle": "Mission & Vision",
+    "mission1": "Brückenkopf zwischen China und Deutschland",
+    "mission2": "Aufbau bilateralen Vertrauens",
+    "mission3": "Förderung des Technologieaustauschs",
+    "historyTitle": "Unsere Geschichte",
+    "history2000": "Beginn in China",
+    "history2000Desc": "Beginn der Geschäftskooperationen auf dem chinesischen Markt",
+    "history2010": "Aufbau des Netzwerks",
+    "history2010Desc": "Aufbau strategischer Partnerschaften mit deutschen Unternehmen",
+    "history2015": "Offizielle Gründung",
+    "history2015Desc": "Die DCI wurde in Deutschland offiziell registriert",
+    "history2020": "Digitale Transformation",
+    "history2020Desc": "Förderung eines kombinierten Online-Offline-Service-Modells",
+    "history2024": "Weiterentwicklung",
+    "history2024Desc": "Über 200 Mitgliedsunternehmen in verschiedenen Industriebereichen",
+    "ctaTitle": "Werden Sie Teil von uns",
+    "ctaText": "Werden Sie DCI-Mitglied und profitieren Sie von den reichhaltigen Ressourcen der chinesisch-deutschen Industriekooperation",
+    "ctaButton": "Mitgliedsvorteile entdecken"
+  },
+  "Services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Professionelle Dienstleistungen für die chinesisch-deutsche Industriekooperation",
+    "heroText": "Professionelle, pragmatische und effiziente Dienstleistungen für die chinesisch-deutsche Industriekooperation",
+    "ctaTitle": "Beginnen Sie Ihre Reise zur chinesisch-deutschen Zusammenarbeit",
+    "ctaText": "Unser professionelles Team steht Ihnen jederzeit zur Verfügung",
+    "ctaButton": "Kontaktieren Sie uns",
+    "processTitle": "Unser Prozess",
+    "process": {
+      "step1": "Bedarfsanalyse",
+      "step1Desc": "Wir verstehen Ihre Geschäftsanforderungen und Ziele",
+      "step2": "Lösungsentwicklung",
+      "step2Desc": "Erstellung eines maßgeschneiderten Kooperationsplans",
+      "step3": "Ressourcenanbindung",
+      "step3Desc": "Passende Partner und Ressourcen finden",
+      "step4": "Laufende Unterstützung",
+      "step4Desc": "Begleitung bis zum Projekterfolg"
+    },
+    "services": {
+      "marketEntry": {
+        "title": "Markteintrittsberatung",
+        "description": "Umfassende Unterstützung für deutsche Unternehmen, die in den chinesischen Markt eintreten, und chinesische Unternehmen, die sich auf dem deutschen Markt entwickeln möchten",
+        "features": {
+          "feature1": "Tiefgehende Marktforschung und Analyse",
+          "feature2": "Lokalisierung des Geschäftsmodells",
+          "feature3": "Rechts- und Compliance-Beratung",
+          "feature4": "Präzises Partnermatching",
+          "feature5": "Strategische Markteintrittsplanung"
+        }
+      },
+      "techCooperation": {
+        "title": "Technologiekooperation",
+        "description": "Förderung der tiefgreifenden Zusammenarbeit zwischen chinesischen und deutschen Unternehmen in Technologieinnovation, F&E-Kooperation und Patentübertragung",
+        "features": {
+          "feature1": "Präzise Technologiebedarfsanbindung",
+          "feature2": "Vermittlung gemeinsamer F&E-Projekte",
+          "feature3": "Patent- und IP-Dienstleistungen",
+          "feature4": "Technologietransfer und Implementierung",
+          "feature5": "Laborkooperation und Ressourcen Sharing"
+        }
+      },
+      "investment": {
+        "title": "Investment & M&A",
+        "description": "Professionelle Dienstleistungen für chinesische und deutsche Unternehmen bei der Suche nach Investitionsmöglichkeiten, Due Diligence und M&A-Integration",
+        "features": {
+          "feature1": "Screening und Bewertung von Investitionszielen",
+          "feature2": "Umfassende Due-Diligence-Unterstützung",
+          "feature3": "Bewertung und Transaktionsstrukturdesign",
+          "feature4": "Post-M&A-Integrationsplanung",
+          "feature5": "Investment Management und Mehrwertdienste"
+        }
+      },
+      "talentTraining": {
+        "title": "Personal & Schulung",
+        "description": "Interkulturelles Managementtraining, Headhunting für Führungskräfte, technische Schulungen und更多",
+        "features": {
+          "feature1": "Interkulturelles Managementtraining",
+          "feature2": "Präzises Headhunting für Führungskräfte",
+          "feature3": "Kompetenzentwicklung für technisches Personal",
+          "feature4": "Austauschprogramme für Führungskräfte",
+          "feature5": "Personalbewertung und Karriereplanung"
+        }
+      },
+      "talentRecruitment": {
+        "title": "Talentakquise",
+        "description": "Spezialisiert auf die Suche und Vermittlung von Spitzentalenten für den chinesisch-deutschen Raum, um Unternehmen Kernkräfte mit interkulturellen Fähigkeiten präzise zuzuordnen",
+        "features": {
+          "feature1": "Gezielte Headhunting-Dienste für Spitzenkräfte",
+          "feature2": "Chinesisch-deutscher Talentpool",
+          "feature3": "Tiefgehende Hintergrundprüfung",
+          "feature4": "Interviewbewertung und Empfehlungen",
+          "feature5": "Einarbeitungsbegleitung und Integrationssupport"
+        }
+      },
+      "expertExchange": {
+        "title": "Internationaler Expertenaustausch",
+        "description": "Aufbau einer Plattform für den Austausch zwischen chinesischen und deutschen Experten zur Förderung des intensiven Dialogs und Wissensaustauschs in den Bereichen Technologie, Management und Wissenschaft",
+        "features": {
+          "feature1": "Zugang zu Branchenexperten-Pool",
+          "feature2": "Technologieberatungsdienste",
+          "feature3": "Organisation von Expertenbesuchen",
+          "feature4": "Akademische Austauschkonferenzen",
+          "feature5": "Kooperation mit interkulturellen Think Tanks"
+        }
+      }
+    },
+    "industries": {
+      "title": "Branchenschwerpunkte",
+      "items": {
+        "item1": "Automobil & Neue Energien",
+        "item2": "Maschinenbau",
+        "item3": "Stahlmetallurgie",
+        "item4": "Chemie & Neue Materialien",
+        "item5": "Medizin & Gesundheit",
+        "item6": "Lebensmittelverarbeitung",
+        "item7": "Moderne Logistik",
+        "item8": "Informationstechnologie",
+        "item9": "Umwelt & Nachhaltigkeit"
+      }
+    }
+  },
+  "Members": {
+    "title": "Mitgliedsunternehmen",
+    "memberCount": "Mitglied",
+    "benefits": "Mitgliedsvorteile",
+    "subtitle": "Gemeinsam stärker",
+    "viewAll": "Unsere Mitglieder",
+    "join": "Mitglied werden",
+    "noMembers": "Derzeit keine Mitglieder",
+    "addMembers": "Mitglieder werden bald hinzugefügt.",
+    "benefitsList": {
+      "network": "Netzwerk",
+      "networkDesc": "Zugang zu unserem umfangreichen Netzwerk",
+      "events": "Veranstaltungen",
+      "eventsDesc": "Exklusive Events und Konferenzen",
+      "market": "Marktinformationen",
+      "marketDesc": "Aktuelle Markteinblicke und Analysen",
+      "business": "Geschäftschancen",
+      "businessDesc": "Geschäftspartner und Kooperationsmöglichkeiten"
+    },
+    "relatedTitle": "Interesse an einer Zusammenarbeit?",
+    "relatedText": "Möchten Sie mit diesem Unternehmen zusammenarbeiten?",
+    "relatedButton": "Kontaktieren Sie DCI",
+    "joinText": "Treten Sie der Deutsch-Chinesischen Industriekoorperationsverband bei und entwickeln Sie sich gemeinsam mit zahlreichen erstklassigen Unternehmen weiter."
+  },
+  "Contact": {
+    "metaTitle": "Kontakt - DCI",
+    "metaDescription": "Kontaktieren Sie die Deutsch-Chinesische Industriekoorperationsverband",
+    "title": "Kontakt",
+    "contactInfo": "Kontaktinformationen",
+    "address": "Adresse",
+    "addressValue": "Friedrichstraße 95, 10117 Berlin, Deutschland",
+    "phone": "Telefon",
+    "phoneValue": "+49 30 6192 8590",
+    "email": "E-Mail",
+    "writeToUs": "Schreiben Sie uns",
+    "emailDescription": "Klicken Sie auf die Schaltfläche unten, um Ihr E-Mail-Programm zu öffnen und uns direkt zu kontaktieren.",
+    "openMailClient": "E-Mail senden"
+  },
+  "DeJiangTong": {
+    "hero": {
+      "title": "German Engineer Connect",
+      "subtitle": "Verbindung deutscher Ingenieure mit chinesischen Unternehmen",
+      "description": "Ihre Plattform für die Vermittlung von grenzüberschreitenden Ingenieuren",
+      "searchEngineers": "Ingenieure suchen",
+      "searchJobs": "Stellen suchen",
+      "searchCompanies": "Unternehmen suchen"
+    },
+    "features": {
+      "title": "Unsere Leistungen",
+      "engineers": {
+        "title": "Für Ingenieure",
+        "description": "Finden Sie spannende Karrieremöglichkeiten in China"
+      },
+      "companies": {
+        "title": "Für Unternehmen",
+        "description": "Zugang zu erstklassigen deutschen Ingenieuren"
+      },
+      "jobs": {
+        "title": "Jobbörse",
+        "description": "Durchsuchen Sie aktuelle Stellenangebote"
+      }
+    },
+    "stats": {
+      "engineers": "Registrierte Ingenieure",
+      "companies": "Partnerunternehmen",
+      "jobs": "Offene Stellen",
+      "matches": "Erfolgreiche Vermittlungen"
+    },
+    "cta": {
+      "title": "Bereit anzufangen?",
+      "register": "Jetzt registrieren",
+      "learnMore": "Mehr erfahren"
+    }
+  },
+  "About": {
+    "title": "Über uns",
+    "subtitle": "Verbindung deutscher Ingenieure mit chinesischen Unternehmen",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wir sind eine Plattform, die deutsche Ingenieure mit chinesischen Unternehmen verbindet und grenzüberschreitende Karrieremöglichkeiten schafft.",
+      "point1": "Verbindung von Spitzeningenieuren mit führenden Unternehmen",
+      "point2": "Förderung des kulturellen und technischen Austauschs",
+      "point3": "Unterstützung bei der beruflichen Entwicklung in China"
+    },
+    "services": {
+      "title": "Unsere Leistungen",
+      "engineers": {
+        "title": "Für Ingenieure",
+        "description": "Finden Sie spannende Karrieremöglichkeiten in China",
+        "point1": "Zugang zu exklusiven Stellenangeboten",
+        "point2": "Professionelle Karriereberatung",
+        "point3": "Unterstützung bei der Jobvermittlung"
+      },
+      "companies": {
+        "title": "Für Unternehmen",
+        "description": "Finden Sie qualifizierte deutsche Ingenieure",
+        "point1": "Zugang zu qualifizierten Kandidaten",
+        "point2": "Effizientes Recruiting",
+        "point3": "Kulturelle Vermittlung"
+      },
+      "jobs": {
+        "title": "Jobbörse",
+        "description": "Aktuelle Stellenangebote für Fachkräfte",
+        "point1": "Stellen in verschiedenen Branchen",
+        "point2": "Direkte Bewerbungsmöglichkeit",
+        "point3": "Regelmäßig aktualisierte Angebote"
+      }
+    },
+    "why": {
+      "title": "Warum德匠通?"
+    },
+    "cta": {
+      "title": "Starten Sie jetzt",
+      "description": "Werden Sie Teil unseres Netzwerks und entdecken Sie neue Karrieremöglichkeiten"
+    }
+  },
+  "EngineerDetail": {
+    "title": "Ingenieure finden",
+    "subtitle": "Durchsuchen Sie unsere Datenbank mit deutschen Ingenieuren",
+    "filters": {
+      "specialization": "Fachgebiet",
+      "experience": "Erfahrung",
+      "chinaInterest": "Interesse an China",
+      "all": "Alle",
+      "veryInterested": "Sehr interessiert",
+      "interested": "Interessiert",
+      "neutral": "Neutral",
+      "notInterested": "Nicht interessiert"
+    },
+    "noResults": "Keine Ingenieure gefunden",
+    "viewProfile": "Profil ansehen"
+  },
+  "Companies": {
+    "title": "Unternehmen finden",
+    "subtitle": "Entdecken Sie deutsche Unternehmen, die Partnerschaften in China suchen",
+    "filters": {
+      "industry": "Branche",
+      "size": "Unternehmensgröße",
+      "all": "Alle"
+    },
+    "noResults": "Keine Unternehmen gefunden",
+    "viewProfile": "Profil ansehen"
+  },
+  "Jobs": {
+    "title": "Stellenangebote",
+    "subtitle": "Finden Sie Ihre nächste Karrieremöglichkeit",
+    "filters": {
+      "type": "Stellentyp",
+      "location": "Standort",
+      "experience": "Erfahrungslevel",
+      "all": "Alle"
+    },
+    "noResults": "Keine Stellen gefunden",
+    "apply": "Jetzt bewerben",
+    "viewDetails": "Details ansehen"
+  },
+  "Register": {
+    "title": "Bei 德匠通 registrieren",
+    "subtitle": "Erstellen Sie Ihr Konto",
+    "engineer": {
+      "title": "Als Ingenieur registrieren",
+      "description": "Erstellen Sie Ihr Profil und entdecken Sie Karrieremöglichkeiten in China"
+    },
+    "company": {
+      "title": "Als Unternehmen registrieren",
+      "description": "Stellen Sie Jobs ein und verbinden Sie sich mit deutschen Ingenieuren"
+    },
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "submit": "Registrieren",
+      "loginPrompt": "Bereits ein Konto?",
+      "login": "Anmelden"
+    }
+  },
+  "Login": {
+    "title": "Willkommen zurück",
+    "subtitle": "Melden Sie sich bei Ihrem Konto an",
+    "form": {
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "forgotPassword": "Passwort vergessen?",
+      "registerPrompt": "Noch kein Konto?",
+      "register": "Registrieren"
+    }
+  }
+}

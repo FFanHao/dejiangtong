@@ -1,0 +1,234 @@
+{
+  "Navigation": {
+    "about": "About",
+    "services": "Services",
+    "news": "News",
+    "events": "Events",
+    "members": "Members",
+    "contact": "Contact"
+  },
+  "Home": {
+    "hero": {
+      "title": "German-Chinese Industry Cooperation Association",
+      "subtitle": "Inspired by Germany, Connecting China and Europe",
+      "description": "Creating industrial value through strong partnerships",
+      "ctaServices": "Our Services",
+      "ctaContact": "Contact Us"
+    },
+    "about": {
+      "title": "President's Welcome",
+      "subtitle": "Welcome to DCI",
+      "description": "With 25 years of experience in China and deep understanding of both markets, DCI is dedicated to building pragmatic, transparent, and efficient cooperation bridges for enterprises."
+    },
+    "mission": {
+      "title": "Mission & Vision",
+      "subtitle": "Our Task and Future Vision",
+      "bridge": "Bridge between China and Germany",
+      "trust": "Building bilateral trust",
+      "technology": "Promoting technology exchange"
+    },
+    "stats": {
+      "clusters": "Industry Clusters",
+      "experts": "German Experts",
+      "projects": "Successful Projects",
+      "members": "Member Companies"
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "News from the DCI Community",
+      "viewAll": "View All News",
+      "noNews": "No news available at the moment"
+    }
+  },
+  "DeJiangTong": {
+    "hero": {
+      "title": "German Engineer Connect",
+      "subtitle": "Connecting German Engineers with Chinese Companies",
+      "description": "Your platform for cross-border engineering talent matching",
+      "searchEngineers": "Search Engineers",
+      "searchJobs": "Search Jobs",
+      "searchCompanies": "Search Companies"
+    },
+    "features": {
+      "title": "Our Services",
+      "engineers": {
+        "title": "For Engineers",
+        "description": "Find exciting career opportunities in China"
+      },
+      "companies": {
+        "title": "For Companies",
+        "description": "Access top German engineering talent"
+      },
+      "jobs": {
+        "title": "Job Board",
+        "description": "Browse current job openings"
+      }
+    },
+    "stats": {
+      "engineers": "Registered Engineers",
+      "companies": "Partner Companies",
+      "jobs": "Open Positions",
+      "matches": "Successful Matches"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "register": "Register Now",
+      "learnMore": "Learn More"
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Connecting German Engineers with Chinese Companies",
+    "mission": {
+      "title": "Our Mission",
+      "description": "We are a platform connecting German engineers with Chinese companies, creating cross-border career opportunities.",
+      "point1": "Connecting top engineers with leading companies",
+      "point2": "Promoting cultural and technical exchange",
+      "point3": "Supporting career development in China"
+    },
+    "services": {
+      "title": "Our Services",
+      "engineers": {
+        "title": "For Engineers",
+        "description": "Find exciting career opportunities in China",
+        "point1": "Access to exclusive job listings",
+        "point2": "Professional career consulting",
+        "point3": "Job placement support"
+      },
+      "companies": {
+        "title": "For Companies",
+        "description": "Find qualified German engineers",
+        "point1": "Access to qualified candidates",
+        "point2": "Efficient recruiting",
+        "point3": "Cultural mediation"
+      },
+      "jobs": {
+        "title": "Job Board",
+        "description": "Current job openings for professionals",
+        "point1": "Positions in various industries",
+        "point2": "Direct application option",
+        "point3": "Regularly updated listings"
+      }
+    },
+    "why": {
+      "title": "Why 德匠通?"
+    },
+    "cta": {
+      "title": "Get Started Now",
+      "description": "Join our network and discover new career opportunities"
+    }
+  },
+  "Contact": {
+    "metaTitle": "Contact - DCI",
+    "metaDescription": "Contact the Deutsch-Chinese Industrial Cooperation Association",
+    "title": "Contact Us",
+    "contactInfo": "Contact Information",
+    "address": "Address",
+    "addressValue": "Friedrichstraße 95, 10117 Berlin, Germany",
+    "phone": "Phone",
+    "phoneValue": "+49 30 6192 8590",
+    "email": "Email",
+    "writeToUs": "Write to Us",
+    "emailDescription": "Click the button below to open your email client and contact us directly.",
+    "openMailClient": "Send Email",
+    "form": {
+      "title": "Send us a Message",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this about?",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "Engineers": {
+    "title": "Find Engineers",
+    "subtitle": "Browse our database of German engineering professionals",
+    "filters": {
+      "specialization": "Specialization",
+      "experience": "Experience",
+      "chinaInterest": "Interest in China",
+      "all": "All",
+      "veryInterested": "Very Interested",
+      "interested": "Interested",
+      "neutral": "Neutral",
+      "notInterested": "Not Interested"
+    },
+    "noResults": "No engineers found matching your criteria",
+    "viewProfile": "View Profile"
+  },
+  "Companies": {
+    "title": "Find Companies",
+    "subtitle": "Discover German companies looking for Chinese partnerships",
+    "filters": {
+      "industry": "Industry",
+      "size": "Company Size",
+      "all": "All"
+    },
+    "noResults": "No companies found matching your criteria",
+    "viewProfile": "View Profile"
+  },
+  "Jobs": {
+    "title": "Job Opportunities",
+    "subtitle": "Find your next career opportunity",
+    "filters": {
+      "type": "Job Type",
+      "location": "Location",
+      "experience": "Experience Level",
+      "all": "All"
+    },
+    "noResults": "No jobs found matching your criteria",
+    "apply": "Apply Now",
+    "viewDetails": "View Details"
+  },
+  "Register": {
+    "title": "Join DeJiangTong",
+    "subtitle": "Create your account",
+    "engineer": {
+      "title": "Register as Engineer",
+      "description": "Create your profile and discover career opportunities in China"
+    },
+    "company": {
+      "title": "Register as Company",
+      "description": "Post jobs and connect with German engineering talent"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Register",
+      "loginPrompt": "Already have an account?",
+      "login": "Log in"
+    }
+  },
+  "Login": {
+    "title": "Welcome Back",
+    "subtitle": "Log in to your account",
+    "form": {
+      "email": "Email Address",
+      "password": "Password",
+      "submit": "Log In",
+      "forgotPassword": "Forgot password?",
+      "registerPrompt": "Don't have an account?",
+      "register": "Register"
+    }
+  },
+  "Common": {
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success"
+  }
+}

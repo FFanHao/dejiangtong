@@ -1,0 +1,477 @@
+{
+  "Navigation": {
+    "about": "关于我们",
+    "services": "核心服务",
+    "news": "新闻动态",
+    "events": "活动",
+    "members": "会员",
+    "contact": "联系我们"
+  },
+  "Impressum": {
+    "title": "法律声明",
+    "companyInfo": "公司信息",
+    "association": "注册协会",
+    "address": "地址",
+    "contact": "联系方式",
+    "phone": "电话",
+    "email": "邮箱",
+    "representative": "法定代表人",
+    "board": "理事会",
+    "boardMembers": "理事会成员",
+    "registerNotice": "已在协会登记处注册。",
+    "registerInfo": "登记信息",
+    "registerCourt": "登记法院",
+    "registerNumber": "协会登记号",
+    "vatId": "增值税号",
+    "responsibility": "责任声明",
+    "contentDisclaimer": "我们努力确保网站上内容的准确性和完整性，但无法保证内容的正确性、完整性或及时性。",
+    "linksDisclaimer": "对于外部链接的内容，我们概不负责。",
+    "lastUpdate": "更新日期",
+    "copyright": "版权声明",
+    "copyrightText": "本网站上由网站管理员创建的内容和作品受德国版权法保护。",
+    "contactCTA": "有问题？请随时联系我们！"
+  },
+  "Datenschutz": {
+    "title": "数据保护声明",
+    "introTitle": "数据保护一览",
+    "introText": "保护您的个人数据对我们至关重要。我们仅根据法定规定（DSGVO、TMG）处理您的数据。",
+    "dataCollection": "网站数据收集",
+    "automatically": "我们自动收集以下数据：",
+    "dataIP": "访问者的 IP 地址",
+    "dataUsage": "使用数据（访问的页面、停留时间）",
+    "dataCookies": "Cookies 和类似技术",
+    "dataAccessTime": "访问日期和时间",
+    "personalData": "个人数据处理",
+    "personalDataText": "我们仅在您自愿向我们提供的情况下处理您的个人数据（例如通过联系请求）。",
+    "purpose": "数据处理目的",
+    "purpose1": "提供和优化我们的在线服务",
+    "purpose2": "回复联系请求",
+    "purpose3": "会员管理",
+    "purpose4": "时事通讯发送（经您同意）",
+    "cookiesTitle": "Cookies",
+    "cookiesText": "本网站使用 Cookies 来改善用户体验。您可以在浏览器设置中禁用 Cookies 存储。",
+    "analytics": "分析工具",
+    "analyticsText": "未经您明确同意，本网站不使用任何分析工具。",
+    "userRights": "您的权利",
+    "right1": "了解您存储的数据",
+    "right2": "更正不正确的数据",
+    "right3": "删除您的数据",
+    "right4": "限制处理",
+    "right5": "反对处理",
+    "contactDPO": "数据保护联系方式",
+    "dpo": "数据保护官",
+    "email": "邮箱",
+    "changes": "本数据保护声明的变更",
+    "changesText": "我们保留在必要时调整本数据保护声明的权利，以确保其符合最新的法律要求。",
+    "lastUpdate": "更新日期",
+    "contactCTA": "对数据保护有疑问？"
+  },
+  "Home": {
+    "hero": {
+      "title": "德中产业联合会",
+      "subtitle": "源自德国，链接中欧，共创产业价值",
+      "description": "凭借强大合作伙伴关系创造产业价值",
+      "ctaServices": "了解服务",
+      "ctaContact": "联系我们"
+    },
+    "about": {
+      "title": "会长致辞",
+      "subtitle": "欢迎来到德中产业联合会",
+      "description": "凭借在华25年的深耕经验及对中德市场的深刻洞察，DCI 致力于为企业在复杂的全球经济格局中构建务实、透明、高效的合作桥梁。"
+    },
+    "mission": {
+      "title": "使命与愿景",
+      "subtitle": "我们的任务与未来愿景",
+      "bridge": "中德两国之间的桥头堡",
+      "trust": "双边产业互信的搭建者",
+      "technology": "技术交流的促成者"
+    },
+    "stats": {
+      "clusters": "产业集群合作",
+      "experts": "德国技术专家",
+      "projects": "成功案例",
+      "members": "会员企业"
+    },
+    "news": {
+      "title": "最新动态",
+      "subtitle": "DCI 社区最新资讯",
+      "viewAll": "查看所有新闻",
+      "noNews": "暂无新闻内容"
+    },
+    "events": {
+      "title": "近期活动",
+      "subtitle": "探索即将举办的精彩活动",
+      "viewAll": "查看所有活动",
+      "noEvents": "暂无活动安排"
+    }
+  },
+  "News": {
+    "title": "新闻动态",
+    "subtitle": "DCI 社区最新资讯",
+    "readMore": "阅读更多",
+    "noNews": "暂无新闻内容",
+    "addNews": "新闻内容即将添加。"
+  },
+  "Events": {
+    "title": "活动",
+    "subtitle": "探索即将举办的精彩活动",
+    "learnMore": "了解更多",
+    "noEvents": "暂无活动安排",
+    "addEvents": "活动内容即将添加。",
+    "date": "日期",
+    "time": "时间",
+    "location": "地点"
+  },
+  "Members": {
+    "title": "会员企业",
+    "benefits": "会员权益",
+    "subtitle": "携手共进",
+    "viewAll": "会员企业展示",
+    "join": "成为 DCI 会员",
+    "noMembers": "暂无会员信息",
+    "addMembers": "会员信息即将添加。",
+    "benefitsList": {
+      "network": "人脉网络",
+      "networkDesc": "接入我们广泛的人脉网络",
+      "events": "活动参与",
+      "eventsDesc": "专属活动和会议参与资格",
+      "market": "市场资讯",
+      "marketDesc": "最新市场洞察与分析",
+      "business": "商业机会",
+      "businessDesc": "商业伙伴与合作机会"
+    }
+  },
+  "Common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "back": "返回",
+    "readMore": "阅读更多"
+  },
+  "Footer": {
+    "about": "关于 DCI",
+    "links": "快速链接",
+    "deOffice": "德国办公室",
+    "cnOffice": "中国办公室",
+    "partners": "合作伙伴",
+    "copyright": "© 2026 德中产业联合会 (DCI). 版权所有。"
+  },
+  "About": {
+    "title": "关于我们",
+    "introTitle": "德中产业联合会 (DCI)",
+    "introText": "德中产业联合会 (DCI) 是一个致力于促进中德两国产业合作与技术交流的非营利性组织。凭借在华25年的深耕经验及对中德市场的深刻洞察，DCI 致力于为企业在复杂的全球经济格局中构建务实、透明、高效的合作桥梁。",
+    "introTextDe": "德中产业联合会 (DCI) 是一个致力于促进中德两国产业合作与技术交流的非营利性组织。",
+    "coreValue": "我们的核心价值在于：以专业的行业知识、广泛的网络资源和务实的合作态度，帮助中德企业跨越文化与市场的障碍，实现互利共赢。",
+    "presidentTitle": "会长致辞",
+    "presidentQuote": "凭借在华25年的深耕经验及对中德市场的深刻洞察，DCI 致力于为企业在复杂的全球经济格局中构建务实、透明、高效的合作桥梁。",
+    "presidentQuoteDe": "凭借在华25年的深耕经验及对中德市场的深刻洞察，DCI 致力于为企业在复杂的全球经济格局中构建务实、透明、高效的合作桥梁。",
+    "presidentClosing": "我们相信，真诚的合作与专业的服务是建立长期信任关系的基础。期待与您携手，共创中德产业合作的美好未来。",
+    "missionTitle": "使命与愿景",
+    "mission1": "中德两国之间的桥头堡",
+    "mission2": "双边产业互信的搭建者",
+    "mission3": "技术交流的促成者",
+    "historyTitle": "发展历程",
+    "history2000": "深耕中国市场",
+    "history2000Desc": "开始在中国市场开展业务合作",
+    "history2010": "建立合作网络",
+    "history2010Desc": "与多家德国企业建立战略合作关系",
+    "history2015": "正式注册成立",
+    "history2015Desc": "德中产业联合会在德国正式注册成立",
+    "history2020": "数字化转型",
+    "history2020Desc": "推动线上线下结合的服务模式",
+    "history2024": "持续发展",
+    "history2024Desc": "会员企业超过200家，服务覆盖多个产业领域",
+    "ctaTitle": "加入我们",
+    "ctaText": "成为 DCI 会员，共享中德产业合作的丰富资源",
+    "ctaButton": "了解会员权益"
+  },
+  "Services": {
+    "title": "核心服务",
+    "subtitle": "专业、务实、高效的中德产业合作服务",
+    "heroText": "专业、务实、高效的中德产业合作服务",
+    "ctaTitle": "开始您的中德合作之旅",
+    "ctaText": "我们的专业团队随时为您提供支持",
+    "ctaButton": "联系我们",
+    "processTitle": "服务流程",
+    "process": {
+      "step1": "需求沟通",
+      "step1Desc": "深入了解您的业务需求和目标",
+      "step2": "方案制定",
+      "step2Desc": "制定定制化的合作方案",
+      "step3": "资源对接",
+      "step3Desc": "匹配最合适的合作伙伴和资源",
+      "step4": "持续支持",
+      "step4Desc": "全程跟进，确保项目成功"
+    },
+    "services": {
+      "marketEntry": {
+        "title": "市场进入服务",
+        "description": "为德国企业进入中国市场和中国企业拓展德国市场提供全方位支持，助力企业快速打开目标市场",
+        "features": {
+          "feature1": "市场深度调研与分析",
+          "feature2": "商业模式本地化适配",
+          "feature3": "法规合规与政策咨询",
+          "feature4": "渠道合作伙伴精准匹配",
+          "feature5": "市场进入策略规划"
+        }
+      },
+      "techCooperation": {
+        "title": "技术合作对接",
+        "description": "促进中德企业在技术创新、研发合作、专利转让等领域的深度合作，推动技术成果转化",
+        "features": {
+          "feature1": "技术需求精准对接",
+          "feature2": "联合研发项目促成",
+          "feature3": "专利与知识产权服务",
+          "feature4": "技术转移与落地支持",
+          "feature5": "实验室合作与资源共享"
+        }
+      },
+      "investment": {
+        "title": "投资并购服务",
+        "description": "为中德企业提供投资机会发现、尽职调查、并购整合等全流程专业服务，确保交易成功",
+        "features": {
+          "feature1": "投资标的筛选与评估",
+          "feature2": "尽职调查全面支持",
+          "feature3": "估值与交易结构设计",
+          "feature4": "并购后整合规划",
+          "feature5": "投后管理与增值服务"
+        }
+      },
+      "talentTraining": {
+        "title": "人才与培训",
+        "description": "提供跨文化管理培训、高端人才猎聘、专业技能培训等服务，打造国际化人才队伍",
+        "features": {
+          "feature1": "跨文化管理能力培训",
+          "feature2": "高管人才精准猎聘",
+          "feature3": "技术人员技能提升",
+          "feature4": "管理层交流项目",
+          "feature5": "人才评估与职业规划"
+        }
+      },
+      "talentRecruitment": {
+        "title": "人才寻访服务",
+        "description": "专注中德高端人才寻访与配置，为企业精准匹配具备跨文化能力的核心骨干人才",
+        "features": {
+          "feature1": "高端人才定向寻访",
+          "feature2": "中德双语人才库",
+          "feature3": "人才背景深度调查",
+          "feature4": "面试评估与推荐",
+          "feature5": "入职跟踪与融入支持"
+        }
+      },
+      "expertExchange": {
+        "title": "国际专家交流",
+        "description": "搭建中德专家交流平台，促进技术、管理、学术领域的深度对话与知识共享",
+        "features": {
+          "feature1": "行业专家库对接",
+          "feature2": "技术顾问咨询服务",
+          "feature3": "专家访问团组织",
+          "feature4": "学术交流会议",
+          "feature5": "跨文化智库合作"
+        }
+      }
+    },
+    "industries": {
+      "title": "重点行业领域",
+      "items": {
+        "item1": "汽车与新能源汽车",
+        "item2": "机械制造",
+        "item3": "钢铁冶金",
+        "item4": "化工与新材料",
+        "item5": "医疗健康",
+        "item6": "食品加工",
+        "item7": "现代物流",
+        "item8": "信息技术",
+        "item9": "环保与可持续发展"
+      }
+    }
+  },
+  "Members": {
+    "title": "会员企业",
+    "memberCount": "会员",
+    "benefits": "会员权益",
+    "subtitle": "携手共进",
+    "viewAll": "会员企业展示",
+    "join": "成为 DCI 会员",
+    "noMembers": "暂无会员信息",
+    "addMembers": "会员信息即将添加。",
+    "benefitsList": {
+      "network": "人脉网络",
+      "networkDesc": "接入我们广泛的人脉网络",
+      "events": "活动参与",
+      "eventsDesc": "专属活动和会议参与资格",
+      "market": "市场资讯",
+      "marketDesc": "最新市场洞察与分析",
+      "business": "商业机会",
+      "businessDesc": "商业伙伴与合作机会"
+    },
+    "relatedTitle": "有意与该企业建立合作？",
+    "relatedText": "希望与该企业建立合作关系？",
+    "relatedButton": "联系 DCI 对接",
+    "joinText": "加入德中产业联合会，与众多优秀企业共同发展，共享中德合作机遇"
+  },
+  "Contact": {
+    "metaTitle": "联系我们 - DCI",
+    "metaDescription": "德中产业联合会联系方式",
+    "title": "联系我们",
+    "contactInfo": "联系方式",
+    "address": "地址",
+    "addressValue": "德国柏林弗里德里希大街 95 号，10117",
+    "phone": "电话",
+    "phoneValue": "+49 30 6192 8590",
+    "email": "电子邮件",
+    "writeToUs": "给我们写信",
+    "emailDescription": "点击下方按钮打开您的邮件客户端，直接与我们联系。",
+    "openMailClient": "发送邮件"
+  },
+  "DeJiangTong": {
+    "hero": {
+      "title": "德匠通",
+      "subtitle": "连接德国工程师与中国企业",
+      "description": "您的跨境工程人才对接平台",
+      "searchEngineers": "搜索工程师",
+      "searchJobs": "搜索职位",
+      "searchCompanies": "搜索企业"
+    },
+    "features": {
+      "title": "我们的服务",
+      "engineers": {
+        "title": "面向工程师",
+        "description": "发现您在中国的职业发展机会"
+      },
+      "companies": {
+        "title": "面向企业",
+        "description": "对接德国优质工程人才"
+      },
+      "jobs": {
+        "title": "职位招聘",
+        "description": "浏览最新职位空缺"
+      }
+    },
+    "stats": {
+      "engineers": "注册工程师",
+      "companies": "合作企业",
+      "jobs": "职位空缺",
+      "matches": "成功匹配"
+    },
+    "cta": {
+      "title": "准备好开始了吗？",
+      "register": "立即注册",
+      "learnMore": "了解更多"
+    }
+  },
+  "About": {
+    "title": "关于我们",
+    "subtitle": "连接德国工程师与中国企业",
+    "mission": {
+      "title": "我们的使命",
+      "description": "我们是一个连接德国工程师与中国企业的平台，创造跨境职业机会。",
+      "point1": "对接优秀工程师与领先企业",
+      "point2": "促进文化与技术交流",
+      "point3": "支持在华职业发展"
+    },
+    "services": {
+      "title": "我们的服务",
+      "engineers": {
+        "title": "面向工程师",
+        "description": "发现您在中国的职业发展机会",
+        "point1": "获取独家职位信息",
+        "point2": "专业职业咨询",
+        "point3": "求职支持服务"
+      },
+      "companies": {
+        "title": "面向企业",
+        "description": "招聘优秀的德国工程师",
+        "point1": "接触优质候选人",
+        "point2": "高效招聘流程",
+        "point3": "文化沟通桥梁"
+      },
+      "jobs": {
+        "title": "职位招聘",
+        "description": "当前热门职位推荐",
+        "point1": "多个行业职位",
+        "point2": "直接申请机会",
+        "point3": "定期更新职位"
+      }
+    },
+    "why": {
+      "title": "为什么选择德匠通？"
+    },
+    "cta": {
+      "title": "立即开始",
+      "description": "加入我们的网络，发现新的职业机会"
+    }
+  },
+  "Engineers": {
+    "title": "寻找工程师",
+    "subtitle": "浏览我们的德国工程师数据库",
+    "filters": {
+      "specialization": "专业领域",
+      "experience": "工作经验",
+      "chinaInterest": "来华意向",
+      "all": "全部",
+      "veryInterested": "非常感兴趣",
+      "interested": "感兴趣",
+      "neutral": "一般",
+      "notInterested": "不感兴趣"
+    },
+    "noResults": "未找到符合条件的工程师",
+    "viewProfile": "查看资料"
+  },
+  "Companies": {
+    "title": "寻找企业",
+    "subtitle": "发现正在寻求中国合作的德国企业",
+    "filters": {
+      "industry": "行业",
+      "size": "企业规模",
+      "all": "全部"
+    },
+    "noResults": "未找到符合条件的企业",
+    "viewProfile": "查看资料"
+  },
+  "Jobs": {
+    "title": "职位机会",
+    "subtitle": "寻找您的下一个职业机会",
+    "filters": {
+      "type": "职位类型",
+      "location": "工作地点",
+      "experience": "经验要求",
+      "all": "全部"
+    },
+    "noResults": "未找到符合条件职位",
+    "apply": "立即申请",
+    "viewDetails": "查看详情"
+  },
+  "Register": {
+    "title": "注册德匠通",
+    "subtitle": "创建您的账户",
+    "engineer": {
+      "title": "工程师注册",
+      "description": "创建您的个人资料，发现中国的职业机会"
+    },
+    "company": {
+      "title": "企业注册",
+      "description": "发布职位并联系德国工程师"
+    },
+    "form": {
+      "name": "姓名",
+      "email": "电子邮件",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "submit": "注册",
+      "loginPrompt": "已有账户？",
+      "login": "登录"
+    }
+  },
+  "Login": {
+    "title": "欢迎回来",
+    "subtitle": "登录您的账户",
+    "form": {
+      "email": "电子邮件",
+      "password": "密码",
+      "submit": "登录",
+      "forgotPassword": "忘记密码？",
+      "registerPrompt": "还没有账户？",
+      "register": "注册"
+    }
+  }
+}
