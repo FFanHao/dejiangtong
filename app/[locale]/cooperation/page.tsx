@@ -43,9 +43,13 @@ export default async function CooperationPage({ params, searchParams }: PageProp
 
   // Mock data fallback if empty
   if (cooperations.length === 0) {
+    const now = new Date().toISOString();
     cooperations = [
       {
         _id: '1',
+        _type: 'cooperation',
+        _createdAt: now,
+        _updatedAt: now,
         title: { de: '寻求德国汽车零部件供应商', zh: '寻求德国汽车零部件供应商', en: 'Seeking German Auto Parts Suppliers' },
         slug: { current: 'german-auto-parts' },
         type: 'order_cooperation',
@@ -57,10 +61,13 @@ export default async function CooperationPage({ params, searchParams }: PageProp
           region: '上海',
         },
         status: 'open',
-        createdAt: new Date().toISOString(),
+        createdAt: now,
       },
       {
         _id: '2',
+        _type: 'cooperation',
+        _createdAt: now,
+        _updatedAt: now,
         title: { de: '德国机械企业来华考察团', zh: '德国机械企业来华考察团', en: 'German Machinery Company Visit to China' },
         slug: { current: 'german-machinery-visit' },
         type: 'overseas_inspection',
@@ -72,7 +79,7 @@ export default async function CooperationPage({ params, searchParams }: PageProp
           region: 'Bayern',
         },
         status: 'open',
-        createdAt: new Date().toISOString(),
+        createdAt: now,
       },
     ] as Cooperation[];
   }

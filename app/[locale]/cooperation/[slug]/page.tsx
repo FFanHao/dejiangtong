@@ -38,8 +38,12 @@ export default async function CooperationDetailPage({ params }: PageProps) {
 
   // Mock data fallback if empty
   if (!cooperation) {
+    const now = new Date().toISOString();
     cooperation = {
       _id: '1',
+      _type: 'cooperation',
+      _createdAt: now,
+      _updatedAt: now,
       title: { de: '寻求德国汽车零部件供应商', zh: '寻求德国汽车零部件供应商', en: 'Seeking German Auto Parts Suppliers' },
       slug: { current: slug },
       type: 'order_cooperation',
@@ -57,7 +61,7 @@ export default async function CooperationDetailPage({ params }: PageProps) {
         website: 'https://example.com',
       },
       status: 'open',
-      createdAt: new Date().toISOString(),
+      createdAt: now,
     } as Cooperation;
   }
 
