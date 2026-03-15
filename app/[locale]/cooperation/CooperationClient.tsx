@@ -3,23 +3,7 @@
 import { useState, useEffect, Suspense } from 'react';
 import { Link } from '@/app/routing';
 import { useSearchParams } from 'next/navigation';
-
-interface Cooperation {
-  _id: string;
-  title: { de: string; zh: string; en: string };
-  slug: { current: string };
-  type?: string;
-  company?: {
-    _id: string;
-    name: { de: string; zh: string; en: string };
-    slug: { current: string };
-    logo?: any;
-    companyType?: string;
-    region?: string;
-  };
-  status?: string;
-  createdAt?: string;
-}
+import type { Cooperation } from '@/app/lib/sanity/types';
 
 // Helper to get localized string
 function getLocalizedString(obj: { de?: string; zh?: string; en?: string } | undefined, locale: string, fallback?: string): string {

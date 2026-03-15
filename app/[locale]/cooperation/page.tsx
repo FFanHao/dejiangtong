@@ -1,23 +1,7 @@
 import { Suspense } from 'react';
 import { getCooperations } from '@/app/lib/sanity/queries';
 import CooperationClient from './CooperationClient';
-
-interface Cooperation {
-  _id: string;
-  title: { de: string; zh: string; en: string };
-  slug: { current: string };
-  type?: string;
-  company?: {
-    _id: string;
-    name: { de: string; zh: string; en: string };
-    slug: { current: string };
-    logo?: any;
-    companyType?: string;
-    region?: string;
-  };
-  status?: string;
-  createdAt?: string;
-}
+import type { Cooperation } from '@/app/lib/sanity/types';
 
 interface PageProps {
   params: Promise<{

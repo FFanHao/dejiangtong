@@ -1,25 +1,6 @@
 import { getCooperationBySlug } from '@/app/lib/sanity/queries';
 import CooperationDetailClient from './CooperationDetailClient';
-
-interface Cooperation {
-  _id: string;
-  title: { de: string; zh: string; en: string };
-  slug: { current: string };
-  type?: string;
-  description?: { de: string; zh: string; en: string };
-  company?: {
-    _id: string;
-    name: { de: string; zh: string; en: string };
-    slug: { current: string };
-    logo?: any;
-    description?: { de: string; zh: string; en: string };
-    companyType?: string;
-    region?: string;
-    website?: string;
-  };
-  status?: string;
-  createdAt?: string;
-}
+import type { Cooperation } from '@/app/lib/sanity/types';
 
 interface PageProps {
   params: Promise<{

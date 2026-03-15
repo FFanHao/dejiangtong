@@ -1,26 +1,7 @@
 'use client';
 
 import { Link } from '@/app/routing';
-
-interface Cooperation {
-  _id: string;
-  title: { de: string; zh: string; en: string };
-  slug: { current: string };
-  type?: string;
-  description?: { de: string; zh: string; en: string };
-  company?: {
-    _id: string;
-    name: { de: string; zh: string; en: string };
-    slug: { current: string };
-    logo?: any;
-    description?: { de: string; zh: string; en: string };
-    companyType?: string;
-    region?: string;
-    website?: string;
-  };
-  status?: string;
-  createdAt?: string;
-}
+import type { Cooperation } from '@/app/lib/sanity/types';
 
 // Helper to get localized string
 function getLocalizedString(obj: { de?: string; zh?: string; en?: string } | undefined, locale: string, fallback?: string): string {
