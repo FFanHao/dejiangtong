@@ -18,10 +18,47 @@ interface PageProps {
   }>;
 }
 
+// Region translations mapping
+const regionTranslations: Record<string, { de: string; zh: string; en: string }> = {
+  'Bayern': { de: 'Bayern', zh: '巴伐利亚州', en: 'Bavaria' },
+  'Baden-Württemberg': { de: 'Baden-Württemberg', zh: '巴登-符腾堡州', en: 'Baden-Württemberg' },
+  'Nordrhein-Westfalen': { de: 'Nordrhein-Westfalen', zh: '北莱茵-威斯特法伦州', en: 'North Rhine-Westphalia' },
+  'Hessen': { de: 'Hessen', zh: '黑森州', en: 'Hesse' },
+  'Guangdong': { de: 'Guangdong', zh: '广东省', en: 'Guangdong' },
+  'Zhejiang': { de: 'Zhejiang', zh: '浙江省', en: 'Zhejiang' },
+  'Fujian': { de: 'Fujian', zh: '福建省', en: 'Fujian' },
+  'Beijing': { de: 'Beijing', zh: '北京', en: 'Beijing' },
+  'Anhui': { de: 'Anhui', zh: '安徽省', en: 'Anhui' },
+  'Hunan': { de: 'Hunan', zh: '湖南省', en: 'Hunan' },
+  'Shanghai': { de: 'Shanghai', zh: '上海', en: 'Shanghai' },
+};
+
+// Company size translations mapping
+const companySizeTranslations: Record<string, { de: string; zh: string; en: string }> = {
+  'large': { de: 'großes Unternehmen', zh: '大型企业', en: 'Large Enterprise' },
+  'medium': { de: 'mittleres Unternehmen', zh: '中型企业', en: 'Medium Enterprise' },
+  'small': { de: 'kleines Unternehmen', zh: '小型企业', en: 'Small Enterprise' },
+  '10000+': { de: 'über 10.000 Mitarbeiter', zh: '10000人以上', en: '10,000+ employees' },
+  '5000-10000': { de: '5.000-10.000 Mitarbeiter', zh: '5000-10000人', en: '5,000-10,000 employees' },
+  '1000-5000': { de: '1.000-5.000 Mitarbeiter', zh: '1000-5000人', en: '1,000-5,000 employees' },
+};
+
 // Helper to get localized string
 function getLocalizedString(obj: { de?: string; zh?: string; en?: string } | undefined, locale: string, fallback?: string): string {
   if (!obj) return fallback || '';
   return obj[locale as keyof typeof obj] || obj.de || fallback || '';
+}
+
+// Helper to get translated region
+function getTranslatedRegion(region: string | undefined, locale: string): string {
+  if (!region) return '';
+  return regionTranslations[region]?.[locale as keyof typeof regionTranslations[string]] || region;
+}
+
+// Helper to get translated company size
+function getTranslatedCompanySize(size: string | undefined, locale: string): string {
+  if (!size) return '';
+  return companySizeTranslations[size]?.[locale as keyof typeof companySizeTranslations[string]] || size;
 }
 
 export default async function CompaniesPage({ params, searchParams }: PageProps) {
@@ -126,7 +163,7 @@ export default async function CompaniesPage({ params, searchParams }: PageProps)
                             )}
                             {company.region && (
                               <span className="text-gray-500">
-                                {company.region}
+                                {getTranslatedRegion(company.region, locale)}
                               </span>
                             )}
                             {company.industry && (
@@ -136,7 +173,7 @@ export default async function CompaniesPage({ params, searchParams }: PageProps)
                             )}
                             {company.companySize && (
                               <span className="text-gray-500">
-                                {company.companySize} {locale === 'zh' ? '人' : locale === 'en' ? 'employees' : 'Mitarbeiter'}
+                                {getTranslatedCompanySize(company.companySize, locale)}
                               </span>
                             )}
                           </div>
