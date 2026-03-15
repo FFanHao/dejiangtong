@@ -330,7 +330,8 @@
       "description": "您的跨境工程人才对接平台",
       "searchEngineers": "搜索工程师",
       "searchJobs": "搜索职位",
-      "searchCompanies": "搜索企业"
+      "searchCompanies": "搜索企业",
+      "searchCooperation": "合作需求"
     },
     "features": {
       "title": "我们的服务",
@@ -345,6 +346,10 @@
       "jobs": {
         "title": "职位招聘",
         "description": "浏览最新职位空缺"
+      },
+      "cooperation": {
+        "title": "合作需求",
+        "description": "发现中德企业合作机会"
       }
     },
     "stats": {

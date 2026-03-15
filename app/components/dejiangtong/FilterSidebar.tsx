@@ -67,10 +67,10 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
           <div className="space-y-2">
             {[
               { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
-              { value: 'mechanical', label: locale === 'zh' ? '机械工程' : locale === 'en' ? 'Mechanical Engineering' : 'Maschinenbau' },
-              { value: 'electrical', label: locale === 'zh' ? '电气工程' : locale === 'en' ? 'Electrical Engineering' : 'Elektrotechnik' },
-              { value: 'software', label: locale === 'zh' ? '软件工程' : locale === 'en' ? 'Software Engineering' : 'Softwareentwicklung' },
-              { value: 'automotive', label: locale === 'zh' ? '汽车工程' : locale === 'en' ? 'Automotive Engineering' : 'Fahrzeugtechnik' },
+              { value: 'Maschinenbau', label: locale === 'zh' ? '机械工程' : locale === 'en' ? 'Mechanical Engineering' : 'Maschinenbau' },
+              { value: 'Elektrotechnik', label: locale === 'zh' ? '电气工程' : locale === 'en' ? 'Electrical Engineering' : 'Elektrotechnik' },
+              { value: 'Softwareentwicklung', label: locale === 'zh' ? '软件工程' : locale === 'en' ? 'Software Engineering' : 'Softwareentwicklung' },
+              { value: 'Fahrzeugtechnik', label: locale === 'zh' ? '汽车工程' : locale === 'en' ? 'Automotive Engineering' : 'Fahrzeugtechnik' },
             ].map((option) => (
               <label key={option.value} className="flex items-center cursor-pointer">
                 <input
@@ -94,8 +94,8 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
           <div className="space-y-2">
             {[
               { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
-              { value: 'very_interested', label: locale === 'zh' ? '非常感兴趣' : locale === 'en' ? 'Very Interested' : 'Sehr interessiert' },
-              { value: 'interested', label: locale === 'zh' ? '感兴趣' : locale === 'en' ? 'Interested' : 'Interessiert' },
+              { value: 'sehr-interessiert', label: locale === 'zh' ? '非常感兴趣' : locale === 'en' ? 'Very Interested' : 'Sehr interessiert' },
+              { value: 'interessiert', label: locale === 'zh' ? '感兴趣' : locale === 'en' ? 'Interested' : 'Interessiert' },
               { value: 'neutral', label: locale === 'zh' ? '中立' : locale === 'en' ? 'Neutral' : 'Neutral' },
             ].map((option) => (
               <label key={option.value} className="flex items-center cursor-pointer">
@@ -242,8 +242,8 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
           <div className="space-y-2">
             {[
               { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
-              { value: 'full-time', label: locale === 'zh' ? '全职' : locale === 'en' ? 'Full-time' : 'Vollzeit' },
-              { value: 'part-time', label: locale === 'zh' ? '兼职' : locale === 'en' ? 'Part-time' : 'Teilzeit' },
+              { value: 'full_time', label: locale === 'zh' ? '全职' : locale === 'en' ? 'Full-time' : 'Vollzeit' },
+              { value: 'part_time', label: locale === 'zh' ? '兼职' : locale === 'en' ? 'Part-time' : 'Teilzeit' },
               { value: 'contract', label: locale === 'zh' ? '合同制' : locale === 'en' ? 'Contract' : 'Vertrag' },
               { value: 'internship', label: locale === 'zh' ? '实习' : locale === 'en' ? 'Internship' : 'Praktikum' },
             ].map((option) => (
@@ -269,9 +269,11 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
           <div className="space-y-2">
             {[
               { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
-              { value: 'China', label: locale === 'zh' ? '中国' : locale === 'en' ? 'China' : 'China' },
-              { value: 'Germany', label: locale === 'zh' ? '德国' : locale === 'en' ? 'Germany' : 'Deutschland' },
-              { value: 'Remote', label: locale === 'zh' ? '远程' : locale === 'en' ? 'Remote' : 'Remote' },
+              { value: 'München', label: locale === 'zh' ? '慕尼黑' : locale === 'en' ? 'Munich' : 'München' },
+              { value: 'Berlin', label: locale === 'zh' ? '柏林' : locale === 'en' ? 'Berlin' : 'Berlin' },
+              { value: 'Stuttgart', label: locale === 'zh' ? '斯图加特' : locale === 'en' ? 'Stuttgart' : 'Stuttgart' },
+              { value: 'Shanghai', label: locale === 'zh' ? '上海' : locale === 'en' ? 'Shanghai' : 'Shanghai' },
+              { value: 'Beijing', label: locale === 'zh' ? '北京' : locale === 'en' ? 'Beijing' : 'Beijing' },
             ].map((option) => (
               <label key={option.value} className="flex items-center cursor-pointer">
                 <input
@@ -297,8 +299,8 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
               { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
               { value: 'entry', label: locale === 'zh' ? '入门级' : locale === 'en' ? 'Entry Level' : 'Einstiegslevel' },
               { value: 'mid', label: locale === 'zh' ? '中级' : locale === 'en' ? 'Mid Level' : 'Mittelstufe' },
-              { value: 'senior', label: locale === 'zh' ? '高级' : locale === 'en' ? 'Senior Level' : 'Führungsposition' },
-              { value: 'executive', label: locale === 'zh' ? '高管' : locale === 'en' ? 'Executive' : 'Geschäftsführer' },
+              { value: 'senior', label: locale === 'zh' ? '高级' : locale === 'en' ? 'Senior Level' : 'Senior' },
+              { value: 'executive', label: locale === 'zh' ? '高管' : locale === 'en' ? 'Executive' : 'Executive' },
             ].map((option) => (
               <label key={option.value} className="flex items-center cursor-pointer">
                 <input

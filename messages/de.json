@@ -329,7 +329,8 @@
       "description": "Ihre Plattform für die Vermittlung von grenzüberschreitenden Ingenieuren",
       "searchEngineers": "Ingenieure suchen",
       "searchJobs": "Stellen suchen",
-      "searchCompanies": "Unternehmen suchen"
+      "searchCompanies": "Unternehmen suchen",
+      "searchCooperation": "Kooperation"
     },
     "features": {
       "title": "Unsere Leistungen",
@@ -344,6 +345,10 @@
       "jobs": {
         "title": "Jobbörse",
         "description": "Durchsuchen Sie aktuelle Stellenangebote"
+      },
+      "cooperation": {
+        "title": "Kooperation",
+        "description": "Entdecken Sie Geschäftskooperationsmöglichkeiten"
       }
     },
     "stats": {

@@ -47,7 +47,8 @@
       "description": "Your platform for cross-border engineering talent matching",
       "searchEngineers": "Search Engineers",
       "searchJobs": "Search Jobs",
-      "searchCompanies": "Search Companies"
+      "searchCompanies": "Search Companies",
+      "searchCooperation": "Cooperation"
     },
     "features": {
       "title": "Our Services",
@@ -62,6 +63,10 @@
       "jobs": {
         "title": "Job Board",
         "description": "Browse current job openings"
+      },
+      "cooperation": {
+        "title": "Cooperation",
+        "description": "Discover business cooperation opportunities"
       }
     },
     "stats": {

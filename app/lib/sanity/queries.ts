@@ -10,6 +10,7 @@ function getCurrentLanguage(lang?: string): Locale {
 const nameProjection = `name { de, zh, en }`
 const slugProjection = `slug { current }`
 const titleProjection = `title { de, zh, en }`
+const descriptionProjection = `description { de, zh, en }`
 const contentProjection = `content { de, zh, en }`
 const excerptProjection = `excerpt { de, zh, en }`
 
