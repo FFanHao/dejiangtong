@@ -4,15 +4,33 @@ import { useState } from 'react';
 import { Link, useRouter } from '@/app/routing';
 import { useLocale } from 'next-intl';
 
+// Chinese provinces
+const chineseProvinces = [
+  '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
+  '上海', '江苏', '浙江', '安徽', '福建', '江西', '山东', '河南',
+  '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川', '贵州',
+  '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'
+];
+
+// German states
+const germanStates = [
+  'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen',
+  'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen',
+  'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen',
+  'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
+];
+
 export default function RegisterPage() {
   const locale = useLocale();
   const router = useRouter();
   const [userType, setUserType] = useState<'engineer' | 'company'>('engineer');
+  const [companyType, setCompanyType] = useState<'chinese' | 'german'>('chinese');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: '',
+    region: '',
   });
   const [error, setError] = useState('');
 
@@ -26,7 +44,7 @@ export default function RegisterPage() {
     }
 
     // TODO: Implement actual registration logic
-    console.log('Register:', { userType, ...formData });
+    console.log('Register:', { userType, companyType, ...formData });
   };
 
   const getLabel = (key: string) => {
@@ -44,9 +62,19 @@ export default function RegisterPage() {
       submit: { de: 'Registrieren', zh: '注册', en: 'Register' },
       loginPrompt: { de: 'Bereits ein Konto?', zh: '已有账户？', en: 'Already have an account?' },
       login: { de: 'Anmelden', zh: '登录', en: 'Log in' },
+      // Company type labels
+      companyTypeTitle: { de: 'Unternehmenstyp', zh: '企业类型', en: 'Company Type' },
+      chineseCompany: { de: 'Chinesisches Unternehmen', zh: '中国企业', en: 'Chinese Company' },
+      germanCompany: { de: 'Deutsches Unternehmen', zh: '德国企业', en: 'German Company' },
+      // Region labels
+      regionTitle: { de: 'Region', zh: '地区', en: 'Region' },
+      selectProvince: { de: 'Provinz auswählen', zh: '选择省份', en: 'Select Province' },
+      selectState: { de: 'Bundesland auswählen', zh: '选择州', en: 'Select State' },
     };
     return labels[key]?.[locale] || labels[key]?.de || key;
   };
+
+  const regions = companyType === 'chinese' ? chineseProvinces : germanStates;
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -101,6 +129,70 @@ export default function RegisterPage() {
               {userType === 'engineer' ? getLabel('engineerDesc') : getLabel('companyDesc')}
             </p>
           </div>
+
+          {/* Company Type Selection - Only show for company type */}
+          {userType === 'company' && (
+            <div className="mb-6">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                {getLabel('companyTypeTitle')}
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setCompanyType('chinese');
+                    setFormData({ ...formData, region: '' });
+                  }}
+                  className={`flex items-center justify-center p-3 rounded-lg border-2 transition-colors ${
+                    companyType === 'chinese'
+                      ? 'border-red-500 bg-red-50 text-red-700'
+                      : 'border-gray-200 hover:border-gray-300'
+                  }`}
+                >
+                  <span className="font-medium">{getLabel('chineseCompany')}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setCompanyType('german');
+                    setFormData({ ...formData, region: '' });
+                  }}
+                  className={`flex items-center justify-center p-3 rounded-lg border-2 transition-colors ${
+                    companyType === 'german'
+                      ? 'border-yellow-500 bg-yellow-50 text-yellow-700'
+                      : 'border-gray-200 hover:border-gray-300'
+                  }`}
+                >
+                  <span className="font-medium">{getLabel('germanCompany')}</span>
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Region Selection - Only show for company type */}
+          {userType === 'company' && (
+            <div className="mb-6">
+              <label htmlFor="region" className="block text-sm font-medium text-gray-700 mb-2">
+                {getLabel('regionTitle')}
+              </label>
+              <select
+                id="region"
+                name="region"
+                value={formData.region}
+                onChange={(e) => setFormData({ ...formData, region: e.target.value })}
+                className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+              >
+                <option value="">
+                  {companyType === 'chinese' ? getLabel('selectProvince') : getLabel('selectState')}
+                </option>
+                {regions.map((region) => (
+                  <option key={region} value={region}>
+                    {region}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
           <form className="space-y-6" onSubmit={handleSubmit}>
             {error && (

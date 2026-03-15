@@ -169,10 +169,38 @@
     "filters": {
       "industry": "Industry",
       "size": "Company Size",
+      "companyType": "Company Type",
+      "region": "Region",
       "all": "All"
     },
     "noResults": "No companies found matching your criteria",
-    "viewProfile": "View Profile"
+    "viewProfile": "View Profile",
+    "chineseCompany": "Chinese Company",
+    "germanCompany": "German Company"
+  },
+  "Cooperation": {
+    "title": "Cooperation Opportunities",
+    "subtitle": "Discover cooperation opportunities between Chinese and German companies",
+    "filters": {
+      "type": "Type",
+      "all": "All"
+    },
+    "noResults": "No cooperation opportunities found",
+    "viewDetails": "View Details",
+    "types": {
+      "order_cooperation": "Order Cooperation",
+      "overseas_inspection": "Overseas Inspection",
+      "resource_matching": "Resource Matching",
+      "technology_exchange": "Technology Exchange",
+      "other": "Other"
+    },
+    "postedBy": "Posted by",
+    "interested": "Interested?",
+    "contactCompany": "Contact Company",
+    "visitWebsite": "Visit Website",
+    "back": "Back",
+    "description": "Description",
+    "posted": "Posted"
   },
   "Jobs": {
     "title": "Job Opportunities",

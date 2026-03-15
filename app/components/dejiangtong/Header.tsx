@@ -7,6 +7,7 @@ const navItems = [
   { key: 'engineers', de: 'Ingenieure', zh: '工程师', en: 'Engineers', href: '/engineers' },
   { key: 'companies', de: 'Unternehmen', zh: '企业', en: 'Companies', href: '/companies' },
   { key: 'jobs', de: 'Stellen', zh: '职位', en: 'Jobs', href: '/jobs' },
+  { key: 'cooperation', de: 'Kooperation', zh: '合作需求', en: 'Cooperation', href: '/cooperation' },
   { key: 'about', de: 'Über uns', zh: '关于', en: 'About', href: '/about' },
 ];
 

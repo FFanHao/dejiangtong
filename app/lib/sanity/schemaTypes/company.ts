@@ -114,6 +114,24 @@ export default defineType({
       ],
     }),
     defineField({
+      name: 'companyType',
+      title: 'Company Type',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Chinese Company', value: 'chinese' },
+          { title: 'German Company', value: 'german' },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'region',
+      title: 'Region',
+      type: 'string',
+      description: 'Chinese province or German state',
+    }),
+    defineField({
       name: 'lookingFor',
       title: 'Looking For',
       type: 'array',
@@ -124,6 +142,10 @@ export default defineType({
           { title: 'Chinese Engineers', value: 'chinese_engineers' },
           { title: 'Technical Consultants', value: 'consultants' },
           { title: 'Joint Venture Partners', value: 'jv_partners' },
+          { title: 'Order Cooperation', value: 'order_cooperation' },
+          { title: 'Overseas Inspection', value: 'overseas_inspection' },
+          { title: 'Resource Matching', value: 'resource_matching' },
+          { title: 'Technology Exchange', value: 'technology_exchange' },
         ],
         layout: 'list',
       },

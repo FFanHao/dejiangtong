@@ -2,12 +2,28 @@
 
 import { useRouter } from '@/app/routing';
 import { useSearchParams } from 'next/navigation';
-import { useCallback, Suspense } from 'react';
+import { useCallback, Suspense, useState } from 'react';
 
 interface FilterSidebarProps {
   locale: string;
   type: 'engineers' | 'companies' | 'jobs';
 }
+
+// Chinese provinces
+const chineseProvinces = [
+  '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
+  '上海', '江苏', '浙江', '安徽', '福建', '江西', '山东', '河南',
+  '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川', '贵州',
+  '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'
+];
+
+// German states
+const germanStates = [
+  'Baden-Württemberg', 'Bayern', 'Berlin', 'Brandenburg', 'Bremen',
+  'Hamburg', 'Hessen', 'Mecklenburg-Vorpommern', 'Niedersachsen',
+  'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Sachsen',
+  'Sachsen-Anhalt', 'Schleswig-Holstein', 'Thüringen'
+];
 
 function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
   const router = useRouter();
@@ -17,9 +33,14 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
   const currentChinaInterest = searchParams.get('chinaInterest') || '';
   const currentIndustry = searchParams.get('industry') || '';
   const currentCompanySize = searchParams.get('companySize') || '';
+  const currentCompanyType = searchParams.get('companyType') || '';
+  const currentRegion = searchParams.get('region') || '';
   const currentJobType = searchParams.get('jobType') || '';
   const currentLocation = searchParams.get('location') || '';
   const currentExperienceLevel = searchParams.get('experienceLevel') || '';
+
+  // Track selected company type to show appropriate region options
+  const [selectedCompanyType, setSelectedCompanyType] = useState(currentCompanyType || '');
 
   const updateFilter = useCallback((key: string, value: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -28,8 +49,13 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
     } else {
       params.delete(key);
     }
+    // When company type changes, clear region
+    if (key === 'companyType' && value !== currentCompanyType) {
+      params.delete('region');
+      setSelectedCompanyType(value);
+    }
     router.push(`?${params.toString()}`);
-  }, [searchParams, router]);
+  }, [searchParams, router, currentCompanyType]);
 
   const filters = {
     engineers: (
@@ -90,6 +116,67 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
     ),
     companies: (
       <>
+        <div className="mb-6">
+          <h3 className="font-semibold mb-4">
+            {locale === 'zh' ? '企业类型' : locale === 'en' ? 'Company Type' : 'Unternehmenstyp'}
+          </h3>
+          <div className="space-y-2">
+            {[
+              { value: '', label: locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle' },
+              { value: 'chinese', label: locale === 'zh' ? '中国企业' : locale === 'en' ? 'Chinese Company' : 'Chinesisches Unternehmen' },
+              { value: 'german', label: locale === 'zh' ? '德国企业' : locale === 'en' ? 'German Company' : 'Deutsches Unternehmen' },
+            ].map((option) => (
+              <label key={option.value} className="flex items-center cursor-pointer">
+                <input
+                  type="radio"
+                  name="companyType"
+                  value={option.value}
+                  checked={currentCompanyType === option.value}
+                  onChange={() => updateFilter('companyType', option.value)}
+                  className="mr-2"
+                />
+                <span className="text-gray-700">{option.label}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        {currentCompanyType && (
+          <div className="mb-6">
+            <h3 className="font-semibold mb-4">
+              {locale === 'zh' ? '地区' : locale === 'en' ? 'Region' : 'Region'}
+            </h3>
+            <div className="space-y-2">
+              <label className="flex items-center cursor-pointer">
+                <input
+                  type="radio"
+                  name="region"
+                  value=""
+                  checked={currentRegion === ''}
+                  onChange={() => updateFilter('region', '')}
+                  className="mr-2"
+                />
+                <span className="text-gray-700">
+                  {locale === 'zh' ? '全部' : locale === 'en' ? 'All' : 'Alle'}
+                </span>
+              </label>
+              {(currentCompanyType === 'chinese' ? chineseProvinces : germanStates).map((region) => (
+                <label key={region} className="flex items-center cursor-pointer">
+                  <input
+                    type="radio"
+                    name="region"
+                    value={region}
+                    checked={currentRegion === region}
+                    onChange={() => updateFilter('region', region)}
+                    className="mr-2"
+                  />
+                  <span className="text-gray-700">{region}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="mb-6">
           <h3 className="font-semibold mb-4">
             {locale === 'zh' ? '行业' : locale === 'en' ? 'Industry' : 'Branche'}
@@ -236,6 +323,8 @@ function FilterSidebarContent({ locale, type }: FilterSidebarProps) {
     currentChinaInterest,
     currentIndustry,
     currentCompanySize,
+    currentCompanyType,
+    currentRegion,
     currentJobType,
     currentLocation,
     currentExperienceLevel,

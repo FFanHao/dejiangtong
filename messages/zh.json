@@ -423,10 +423,38 @@
     "filters": {
       "industry": "行业",
       "size": "企业规模",
+      "companyType": "企业类型",
+      "region": "地区",
       "all": "全部"
     },
     "noResults": "未找到符合条件的企业",
-    "viewProfile": "查看资料"
+    "viewProfile": "查看资料",
+    "chineseCompany": "中国企业",
+    "germanCompany": "德国企业"
+  },
+  "Cooperation": {
+    "title": "合作需求",
+    "subtitle": "发现中德企业合作机会",
+    "filters": {
+      "type": "类型",
+      "all": "全部"
+    },
+    "noResults": "暂无合作需求",
+    "viewDetails": "查看详情",
+    "types": {
+      "order_cooperation": "订单合作",
+      "overseas_inspection": "海外考察",
+      "resource_matching": "资源对接",
+      "technology_exchange": "技术交流",
+      "other": "其他"
+    },
+    "postedBy": "发布企业",
+    "interested": "对此感兴趣？",
+    "contactCompany": "联系企业",
+    "visitWebsite": "访问网站",
+    "back": "返回",
+    "description": "详情描述",
+    "posted": "发布时间"
   },
   "Jobs": {
     "title": "职位机会",

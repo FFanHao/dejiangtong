@@ -422,10 +422,38 @@
     "filters": {
       "industry": "Branche",
       "size": "Unternehmensgröße",
+      "companyType": "Unternehmenstyp",
+      "region": "Region",
       "all": "Alle"
     },
     "noResults": "Keine Unternehmen gefunden",
-    "viewProfile": "Profil ansehen"
+    "viewProfile": "Profil ansehen",
+    "chineseCompany": "Chinesisches Unternehmen",
+    "germanCompany": "Deutsches Unternehmen"
+  },
+  "Cooperation": {
+    "title": "Kooperationsanfragen",
+    "subtitle": "Entdecken Sie Kooperationsmöglichkeiten zwischen chinesischen und deutschen Unternehmen",
+    "filters": {
+      "type": "Typ",
+      "all": "Alle"
+    },
+    "noResults": "Keine Kooperationsanfragen gefunden",
+    "viewDetails": "Details ansehen",
+    "types": {
+      "order_cooperation": "Auftragskooperation",
+      "overseas_inspection": "Auslandsbesichtigung",
+      "resource_matching": "Ressourcenanbindung",
+      "technology_exchange": "Technologieaustausch",
+      "other": "Sonstiges"
+    },
+    "postedBy": "Veröffentlicht von",
+    "interested": "Interessiert?",
+    "contactCompany": "Unternehmen kontaktieren",
+    "visitWebsite": "Website besuchen",
+    "back": "Zurück",
+    "description": "Beschreibung",
+    "posted": "Veröffentlicht"
   },
   "Jobs": {
     "title": "Stellenangebote",

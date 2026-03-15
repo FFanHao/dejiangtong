@@ -192,6 +192,8 @@ export interface Company extends BaseDocument {
   companySize?: string
   website?: string
   headquarters?: LocalizedString
+  companyType?: 'chinese' | 'german'
+  region?: string
   chinaPresence?: {
     hasOffice?: boolean
     officeLocation?: string
@@ -205,6 +207,18 @@ export interface Company extends BaseDocument {
   }
   lookingFor?: string[]
   isFeatured?: boolean
+}
+
+// Cooperation（合作需求）类型
+export interface Cooperation extends BaseDocument {
+  _type: 'cooperation'
+  title: LocalizedString
+  slug: { current: string }
+  type?: 'order_cooperation' | 'overseas_inspection' | 'resource_matching' | 'technology_exchange' | 'other'
+  description?: LocalizedString
+  company?: Partial<Company>
+  status?: 'open' | 'closed'
+  createdAt?: string
 }
 
 // Job（职位）类型

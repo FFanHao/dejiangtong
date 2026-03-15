@@ -247,6 +247,8 @@ export const mockCompanies: Company[] = [
     ),
     industry: 'Automotive',
     companySize: '10000+',
+    companyType: 'german',
+    region: 'Bayern',
     website: 'https://www.bmw.com',
     headquarters: loc('München', '慕尼黑', 'Munich'),
     chinaPresence: {
@@ -276,6 +278,8 @@ export const mockCompanies: Company[] = [
     ),
     industry: 'Industrial Automation',
     companySize: '10000+',
+    companyType: 'german',
+    region: 'Bayern',
     website: 'https://www.siemens.com',
     headquarters: loc('Berlin', '柏林', 'Berlin'),
     chinaPresence: {
@@ -305,6 +309,8 @@ export const mockCompanies: Company[] = [
     ),
     industry: 'Automotive & Industrial',
     companySize: '10000+',
+    companyType: 'german',
+    region: 'Baden-Württemberg',
     website: 'https://www.bosch.com',
     headquarters: loc('Stuttgart', '斯图加特', 'Stuttgart'),
     chinaPresence: {

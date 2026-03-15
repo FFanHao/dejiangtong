@@ -12,6 +12,8 @@ interface PageProps {
   searchParams: Promise<{
     industry?: string;
     companySize?: string;
+    companyType?: string;
+    region?: string;
     q?: string;
   }>;
 }
@@ -35,6 +37,8 @@ export default async function CompaniesPage({ params, searchParams }: PageProps)
     lang: locale,
     industry: resolvedSearchParams?.industry,
     companySize: resolvedSearchParams?.companySize,
+    companyType: resolvedSearchParams?.companyType,
+    region: resolvedSearchParams?.region,
   });
 
   // Use mock data as fallback if Sanity returns empty
@@ -108,6 +112,23 @@ export default async function CompaniesPage({ params, searchParams }: PageProps)
                             {getLocalizedString(company.description, locale)}
                           </p>
                           <div className="flex items-center gap-2 text-sm text-gray-500">
+                            {company.companyType && (
+                              <span className={`px-2 py-1 rounded text-xs ${
+                                company.companyType === 'chinese'
+                                  ? 'bg-red-100 text-red-700'
+                                  : 'bg-yellow-100 text-yellow-700'
+                              }`}>
+                                {company.companyType === 'chinese'
+                                  ? locale === 'zh' ? '中国企业' : locale === 'en' ? 'Chinese' : 'Chinesisch'
+                                  : locale === 'zh' ? '德国企业' : locale === 'en' ? 'German' : 'Deutsch'
+                                }
+                              </span>
+                            )}
+                            {company.region && (
+                              <span className="text-gray-500">
+                                {company.region}
+                              </span>
+                            )}
                             {company.industry && (
                               <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">
                                 {company.industry}

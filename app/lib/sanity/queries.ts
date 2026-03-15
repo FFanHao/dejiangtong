@@ -1,5 +1,5 @@
 import { client } from './client'
-import type { News, Event, Member, NewsCategory, EventCategory, MemberIndustry, MemberCategory, SiteConfig, Vorstand, Engineer, Company, Job, Locale } from './types'
+import type { News, Event, Member, NewsCategory, EventCategory, MemberIndustry, MemberCategory, SiteConfig, Vorstand, Engineer, Company, Job, Cooperation, Locale } from './types'
 
 // 获取当前语言
 function getCurrentLanguage(lang?: string): Locale {
@@ -562,6 +562,8 @@ export async function getCompanies(params: {
   lang?: string
   industry?: string
   companySize?: string
+  companyType?: string
+  region?: string
 } = {}) {
   const language = getCurrentLanguage(params.lang)
   const page = params.page || 1
@@ -575,6 +577,12 @@ export async function getCompanies(params: {
   if (params.companySize) {
     filters += ` && companySize == "${params.companySize}"`
   }
+  if (params.companyType) {
+    filters += ` && companyType == "${params.companyType}"`
+  }
+  if (params.region) {
+    filters += ` && region == "${params.region}"`
+  }
 
   const query = `*[_type == "company"${filters}] | order(isFeatured desc, _createdAt desc) [${start}...${start + perPage}] {
     _id,
@@ -585,6 +593,8 @@ export async function getCompanies(params: {
     description { de, zh, en },
     industry,
     companySize,
+    companyType,
+    region,
     website,
     headquarters { de, zh, en },
     lookingFor,
@@ -614,6 +624,8 @@ export async function getCompanyBySlug(slug: string, lang?: string) {
     description { de, zh, en },
     industry,
     companySize,
+    companyType,
+    region,
     website,
     headquarters { de, zh, en },
     chinaPresence,
@@ -725,6 +737,93 @@ export async function getJobBySlug(slug: string, lang?: string) {
     return job
   } catch (error) {
     console.error('Error fetching job by slug from Sanity:', error)
+    return null
+  }
+}
+
+// ============ COOPERATION (合作需求) ============
+
+// 获取合作需求列表
+export async function getCooperations(params: {
+  per_page?: number
+  page?: number
+  lang?: string
+  type?: string
+  status?: string
+} = {}) {
+  const language = getCurrentLanguage(params.lang)
+  const page = params.page || 1
+  const perPage = params.per_page || 20
+  const start = (page - 1) * perPage
+
+  let filters = ''
+  if (params.type) {
+    filters += ` && type == "${params.type}"`
+  }
+  if (params.status) {
+    filters += ` && status == "${params.status}"`
+  } else {
+    filters += ` && status != "closed"`
+  }
+
+  const query = `*[_type == "cooperation"${filters}] | order(createdAt desc) [${start}...${start + perPage}] {
+    _id,
+    _createdAt,
+    ${titleProjection},
+    ${slugProjection},
+    type,
+    "company": company->{
+      _id,
+      ${nameProjection},
+      ${slugProjection},
+      logo,
+      companyType,
+      region
+    },
+    status,
+    createdAt
+  }`
+
+  try {
+    const cooperations = await client.fetch<Cooperation[]>(query)
+    return cooperations
+  } catch (error) {
+    console.error('Error fetching cooperations from Sanity:', error)
+    return []
+  }
+}
+
+// 获取单个合作需求
+export async function getCooperationBySlug(slug: string, lang?: string) {
+  const language = getCurrentLanguage(lang)
+
+  const query = `*[_type == "cooperation" && slug.current == $slug][0] {
+    _id,
+    _createdAt,
+    _updatedAt,
+    ${titleProjection},
+    ${slugProjection},
+    type,
+    ${descriptionProjection},
+    "company": company->{
+      _id,
+      ${nameProjection},
+      ${slugProjection},
+      logo,
+      description { de, zh, en },
+      companyType,
+      region,
+      website
+    },
+    status,
+    createdAt
+  }`
+
+  try {
+    const cooperation = await client.fetch<Cooperation | null>(query, { slug })
+    return cooperation
+  } catch (error) {
+    console.error('Error fetching cooperation by slug from Sanity:', error)
     return null
   }
 }
