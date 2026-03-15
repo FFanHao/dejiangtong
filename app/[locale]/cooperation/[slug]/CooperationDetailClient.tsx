@@ -83,13 +83,13 @@ export default function CooperationDetailClient({ locale, cooperation }: { local
                 <h3 className="font-semibold text-lg mb-4">
                   {locale === 'zh' ? '发布企业' : locale === 'en' ? 'Posted by' : 'Veröffentlicht von'}
                 </h3>
-                <Link href={`/${locale}/companies/${cooperation.company.slug.current}`} className="block">
+                <Link href={`/${locale}/companies/${cooperation.company?.slug?.current || ''}`} className="block">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      {cooperation.company.logo ? (
+                      {cooperation.company?.logo ? (
                         <img
-                          src={cooperation.company.logo.asset?._ref ? `/api/image/${cooperation.company.logo.asset._ref}` : '/placeholder.jpg'}
-                          alt={getLocalizedString(cooperation.company.name, locale)}
+                          src={cooperation.company?.logo.asset?._ref ? `/api/image/${cooperation.company?.logo.asset._ref}` : '/placeholder.jpg'}
+                          alt={getLocalizedString(cooperation.company?.name, locale)}
                           className="w-full h-full object-contain p-2"
                         />
                       ) : (
@@ -100,24 +100,24 @@ export default function CooperationDetailClient({ locale, cooperation }: { local
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">
-                        {getLocalizedString(cooperation.company.name, locale)}
+                        {getLocalizedString(cooperation.company?.name, locale)}
                       </p>
-                      {cooperation.company.companyType && (
+                      {cooperation.company?.companyType && (
                         <p className="text-sm text-gray-500">
-                          {cooperation.company.companyType === 'chinese'
+                          {cooperation.company?.companyType === 'chinese'
                             ? locale === 'zh' ? '中国企业' : locale === 'en' ? 'Chinese Company' : 'Chinesisches Unternehmen'
                             : locale === 'zh' ? '德国企业' : locale === 'en' ? 'German Company' : 'Deutsches Unternehmen'
                           }
-                          {cooperation.company.region && ` · ${cooperation.company.region}`}
+                          {cooperation.company?.region && ` · ${cooperation.company?.region}`}
                         </p>
                       )}
                     </div>
                   </div>
                 </Link>
 
-                {cooperation.company.website && (
+                {cooperation.company?.website && (
                   <a
-                    href={cooperation.company.website}
+                    href={cooperation.company?.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full text-center py-2 px-4 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 transition-colors"

@@ -112,10 +112,10 @@ export default function CooperationContent({ locale, cooperations }: { locale: s
                   {cooperation.company && (
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        {cooperation.company.logo ? (
+                        {cooperation.company?.logo ? (
                           <img
-                            src={cooperation.company.logo.asset?._ref ? `/api/image/${cooperation.company.logo.asset._ref}` : '/placeholder.jpg'}
-                            alt={getLocalizedString(cooperation.company.name, locale)}
+                            src={cooperation.company?.logo.asset?._ref ? `/api/image/${cooperation.company?.logo.asset._ref}` : '/placeholder.jpg'}
+                            alt={getLocalizedString(cooperation.company?.name, locale)}
                             className="w-full h-full object-contain p-1"
                           />
                         ) : (
@@ -126,14 +126,14 @@ export default function CooperationContent({ locale, cooperations }: { locale: s
                       </div>
                       <div>
                         <p className="font-medium text-gray-900">
-                          {getLocalizedString(cooperation.company.name, locale)}
+                          {getLocalizedString(cooperation.company?.name, locale)}
                         </p>
-                        {cooperation.company.companyType && cooperation.company.region && (
+                        {cooperation.company?.companyType && cooperation.company?.region && (
                           <p className="text-sm text-gray-500">
-                            {cooperation.company.companyType === 'chinese'
+                            {cooperation.company?.companyType === 'chinese'
                               ? locale === 'zh' ? '中国企业' : locale === 'en' ? 'Chinese' : 'Chinesisch'
                               : locale === 'zh' ? '德国企业' : locale === 'en' ? 'German' : 'Deutsch'
-                            } · {cooperation.company.region}
+                            } · {cooperation.company?.region}
                           </p>
                         )}
                       </div>
